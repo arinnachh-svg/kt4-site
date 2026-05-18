@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Контакты — SUMI Studio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+  <div class="header-inner">
+    <span class="logo">SUMI</span>
+    <button class="menu-btn" id="menu-btn">☰</button>
+    <nav class="nav" id="nav-links">
+      <a href="index.html">Главная</a>
+      <a href="portfolio.html">Работы</a>
+      <a href="contacts.html">Контакты</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <h1>Контакты</h1>
+    <p>Записаться или задать вопрос — ответим в течение дня</p>
+  </section>
+
+  <section class="form-section">
+    <form class="form" id="contact-form">
+      <label>Ваше имя
+        <input type="text" name="name" id="name" placeholder="Арина">
+      </label>
+      <label>Электронная почта
+        <input type="email" name="email" id="email" placeholder="example@mail.ru">
+      </label>
+      <label>Телефон
+        <input type="tel" name="phone" id="phone" placeholder="+7 (999) 000-00-00">
+      </label>
+      <label>Место на теле
+        <input type="text" name="place" id="place" placeholder="Предплечье, запястье...">
+      </label>
+      <label>Описание идеи
+        <textarea name="message" id="message" placeholder="Расскажите о задумке — стиль, размер, референсы..."></textarea>
+      </label>
+      <button type="submit" class="btn">Записаться</button>
+    </form>
+    <p class="form-msg" id="form-msg"></p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>SUMI Studio &mdash; Арина, 3ВД1</p>
+</footer>
+
+</body>
+</html>
