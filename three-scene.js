@@ -54,8 +54,8 @@
   var loader = new THREE.GLTFLoader();
   loader.load('./models/model.glb', function(gltf) {
     var model = gltf.scene;
-    model.position.set(0, -1.2, 0);
-    model.scale.set(0.008, 0.008, 0.008);
+    model.position.set(0, -2.8, 2);
+    model.scale.set(0.012, 0.012, 0.012);
     scene.add(model);
     if (gltf.animations && gltf.animations.length > 0) {
       mixer = new THREE.AnimationMixer(model);
