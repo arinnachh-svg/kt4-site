@@ -11,7 +11,7 @@
   scene.background = new THREE.Color(0xe8e2d9);
 
   var camera = new THREE.PerspectiveCamera(55, W / H, 0.1, 100);
-  camera.position.set(0, 1.5, 7);
+  camera.position.set(0, 2, 9);
 
   var renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true });
   renderer.setSize(W, H);
@@ -31,21 +31,21 @@
     new THREE.BoxGeometry(1.3, 1.3, 1.3),
     new THREE.MeshStandardMaterial({ color: 0x8c7b6b })
   );
-  box.position.set(-2.5, 0, 0);
+  box.position.set(-2.5, 1.8, 0);
   scene.add(box);
 
   var sphere = new THREE.Mesh(
     new THREE.SphereGeometry(0.85, 32, 32),
     new THREE.MeshStandardMaterial({ color: 0xd4c9b8 })
   );
-  sphere.position.set(0, 0, 0);
+  sphere.position.set(0, 1.8, 0);
   scene.add(sphere);
 
   var torus = new THREE.Mesh(
     new THREE.TorusGeometry(0.75, 0.28, 16, 60),
     new THREE.MeshStandardMaterial({ color: 0x5a4a3a })
   );
-  torus.position.set(2.5, 0, 0);
+  torus.position.set(2.5, 1.8, 0);
   scene.add(torus);
 
   var mixer = null;
@@ -54,8 +54,8 @@
   var loader = new THREE.GLTFLoader();
   loader.load('./models/model.glb', function(gltf) {
     var model = gltf.scene;
-    model.position.set(0, -2.8, 2);
-    model.scale.set(0.012, 0.012, 0.012);
+    model.position.set(0, -2, 0);
+    model.scale.set(0.008, 0.008, 0.008);
     scene.add(model);
     if (gltf.animations && gltf.animations.length > 0) {
       mixer = new THREE.AnimationMixer(model);
